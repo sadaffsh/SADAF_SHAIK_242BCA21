@@ -25,7 +25,7 @@ A two-page web app built with **Streamlit** and **Supabase** that lets lab users
 
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/sadaffsh/SADAF_SHAIK_242BCA21.git]
+   git clone https://github.com/sadaffsh/SADAF_SHAIK_242BCA21.git
    cd sadafSE
    ```
 
@@ -57,5 +57,6 @@ sadafSE/
 ## 🔗 Hosted App Link
 
 [Users App](https://faulty-equipment-reporter.streamlit.app/)
+|
 [Admin App](https://server-faulty-equipment-reporter.streamlit.app/)
 
