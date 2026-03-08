@@ -1,12 +1,12 @@
 # 🔬 Lab Equipment Fault Reporting System
 
-A simple two-page web app built with **Streamlit** and **Supabase** that lets lab users report faulty equipment and gives admins a live dashboard to monitor everything in real time.
+A two-page web app built with **Streamlit** and **Supabase** that lets lab users report faulty equipment and gives admins a live dashboard to monitor everything in real time with no refreshing needed.
 
 ---
 
 ## 📌 Overview
 
-- **Client App** — Lab users can select equipment (Chemistry or Physics lab), view its current status, and mark it as faulty or working.
+- **Users App** — Lab users can select equipment (Chemistry or Physics lab), view its current status, and mark it as faulty or working.
 - **Admin Dashboard** — Admins get a live overview of all equipment with auto-refresh every 5 seconds. No page reload needed.
 
 ---
@@ -25,7 +25,7 @@ A simple two-page web app built with **Streamlit** and **Supabase** that lets la
 
 1. **Clone the repo**
    ```bash
-   git clone [your GitHub link here]
+   git clone [https://github.com/sadaffsh/SADAF_SHAIK_242BCA21.git]
    cd sadafSE
    ```
 
