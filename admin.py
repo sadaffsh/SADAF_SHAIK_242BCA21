@@ -3,9 +3,8 @@ from supabase import create_client
 import time
 
 # ── Hardcoded credentials ──────────────────────────────────────────
-SUPABASE_URL = "https://dkwojxzwtzxhzszpilas.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrd29qeHp3dHp4aHpzenBpbGFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2Mzg0NzQsImV4cCI6MjA4ODIxNDQ3NH0.DpCuFfBtH2-8tlX10lshel0JMpJOKGn00aYPzuYStog"
-
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 if "last_refresh" not in st.session_state:
     st.session_state.last_refresh = 0
@@ -150,4 +149,5 @@ if selected:
         elif st.session_state.admin_message_type == "success":
             st.success(st.session_state.admin_message)
         elif st.session_state.admin_message_type == "warning":
+
             st.warning(st.session_state.admin_message)
