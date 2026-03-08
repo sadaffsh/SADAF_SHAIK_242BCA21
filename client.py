@@ -2,9 +2,8 @@ import streamlit as st
 from supabase import create_client
 
 # ── Hardcoded credentials ──────────────────────────────────────────
-SUPABASE_URL = "https://dkwojxzwtzxhzszpilas.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrd29qeHp3dHp4aHpzenBpbGFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2Mzg0NzQsImV4cCI6MjA4ODIxNDQ3NH0.DpCuFfBtH2-8tlX10lshel0JMpJOKGn00aYPzuYStog"
-
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 st.set_page_config(page_title="Lab Equipment Client", page_icon="🔬", layout="centered")
 st.title("🔬 Lab Equipment — Client App")
@@ -105,4 +104,5 @@ if selected:
             st.success(st.session_state.last_message)
         elif st.session_state.last_message_type == "warning":
             st.warning(st.session_state.last_message)
+
             
